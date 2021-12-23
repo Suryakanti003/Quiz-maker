@@ -16,5 +16,6 @@ function makeNewTopic(){
     let topic = {questions:[],
                  name = topicName.value}
     topics.push(topic);
+    topicName.value="";
   }else alert("Please put a topic name");
 }
