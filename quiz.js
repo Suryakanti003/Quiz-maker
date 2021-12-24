@@ -3,7 +3,7 @@ let newTopic = document.getElementById("topic_new");
 let topicName = document.getElementById("topic_name");
 function setup(){
   createCanvas(400,400);
-  newTopic.addEventListener("click", makeNewTopic());
+  newTopic.addEventListener("click", makeNewTopic);
 }
 
 function draw(){
