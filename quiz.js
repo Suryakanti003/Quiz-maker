@@ -9,18 +9,16 @@ function setup(){
 
 function draw(){
   background(127);
-  
   for(let i=0;i<2;i++){
     for(let j=0; j<3;j++){
       if(topics[3*i+j]){
-        rect(width/(j+1), height/(i+1), 200, 200);
+        rect((j+1)*width/3-150, (i+1)*height/(2-150, 100, 100);
       }
     }
   }  
 }
 
 function makeNewTopic(){
-  console.log("this is finally working");
   if(topicName.value){
     let topic = {questions : [],
                  name : topicName.value}
