@@ -13,8 +13,8 @@ function draw(){
 function makeNewTopic(){
   console.log("this is finally working");
   if(topicName.value){
-    let topic = {questions:[],
-                 name = topicName.value}
+    let topic = {questions : [],
+                 name : topicName.value}
     topics.push(topic);
     topicName.value="";
   }else alert("Please put a topic name");
