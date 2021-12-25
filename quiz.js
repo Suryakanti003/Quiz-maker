@@ -1,28 +1,30 @@
-let topics= []
+let topics = [];
 let newTopic = document.getElementById("topic_new");
 let topicName = document.getElementById("topic_name");
-function setup(){
-  createCanvas(800,800);
+function setup() {
+  createCanvas(600, 600);
   newTopic.addEventListener("click", makeNewTopic);
   rectMode(CENTER);
+  textAlign(CENTER);
+  textSize(15);
 }
 
-function draw(){
+function draw() {
   background(127);
-  for(let i=0;i<2;i++){
-    for(let j=0; j<3;j++){
-      if(topics[3*i+j]){
-        rect((j+1)*width/3-150, (i+1)*height/2-150, 100, 100);
+  for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 3; j++) {
+      if (topics[3 * i + j]) {
+        rect((j + 1) * width / 3 - 100, (i + 1) * height / 2 - 100, 100, 100);
+        text(topics[3 * i + j].name, (j + 1) * width / 3 - 100, (i + 1) * height / 2 - 100);
       }
     }
-  }  
+  }
 }
 
-function makeNewTopic(){
-  if(topicName.value){
-    let topic = {questions : [],
-                 name : topicName.value}
+function makeNewTopic() {
+  if (topicName.value) {
+    let topic = { questions: [], name: topicName.value };
     topics.push(topic);
-    topicName.value="";
-  }else alert("Please put a topic name");
+    topicName.value = "";
+  } else alert("Please put a topic name");
 }
