@@ -12,7 +12,7 @@ function draw(){
   for(let i=0;i<2;i++){
     for(let j=0; j<3;j++){
       if(topics[3*i+j]){
-        rect((j+1)*width/3-150, (i+1)*height/(2-150, 100, 100);
+        rect((j+1)*width/3-150, (i+1)*height/2-150, 100, 100);
       }
     }
   }  
