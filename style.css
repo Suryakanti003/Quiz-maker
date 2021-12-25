@@ -21,7 +21,7 @@ button{
   transition-duration: 0.6s;
 }
 
-button: hover{
+button:hover{
   background-color: #4CAF50;
   color: white;
 }
