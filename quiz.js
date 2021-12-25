@@ -1,9 +1,15 @@
 let topics = [];
+
 let newTopic = document.getElementById("topic_new");
 let topicName = document.getElementById("topic_name");
+let deleteTopic = document.getElementById("topic_delete");
+
 function setup() {
   createCanvas(600, 600);
+  
   newTopic.addEventListener("click", makeNewTopic);
+  deleteTopic.addEventListener("click", ()=>topics.pop());
+  
   rectMode(CENTER);
   textAlign(CENTER);
   textSize(15);
